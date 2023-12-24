@@ -1,9 +1,9 @@
 # Happy-Sad-Classifier
 
-1. Dataset Preparation
+# 1. Dataset Preparation
 Before building any model, you'd typically need a dataset of images labeled as 'happy' or 'sad'. This dataset is then divided into training, validation, and test sets.
 
-2. CNN Architecture
+# 2. CNN Architecture
 A typical CNN architecture for such a task might look like:
 
 Input Layer: Accepts the image data (e.g., 128x128 pixels).
@@ -23,13 +23,13 @@ The first fully connected layer can have a large number of neurons (e.g., 128 or
 The final output layer usually has two neurons (one for 'happy' and one for 'sad') with a softmax activation to provide probability scores for each class.
 Dropout: To reduce overfitting, you might introduce dropout layers after the fully connected layers.
 
-3. Model Compilation and Training
+# 3. Model Compilation and Training
 Once the architecture is defined, the model needs to be compiled with appropriate loss function, optimizer, and metrics. A common choice for binary classification problems is the binary cross-entropy loss.
 
 The model is then trained on the training data using an appropriate optimizer (e.g., Adam) and monitored using the validation data.
 
-4. Evaluation
+# 4. Evaluation
 After training, the model's performance is evaluated on the test set to determine its accuracy and other relevant metrics.
 
-5. Prediction
+# 5. Prediction
 Once the model is trained and evaluated, it can be used to predict whether a given face image is happy or sad.
